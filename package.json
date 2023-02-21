@@ -9,6 +9,16 @@
   "files": [
     "dist"
   ],
+  "homepage": "https://github.com/zekunjin/h3-vee#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zekunjin/h3-vee.git"
+  },
+  "bugs": "https://github.com/zekunjin/h3-vee/issues",
+  "keywords": [
+    "h3",
+    "validation"
+  ],
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
