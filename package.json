@@ -1,0 +1,30 @@
+{
+  "name": "h3-vee",
+  "version": "0.0.1",
+  "description": "A request JSON validator for h3",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "unpkg": "./dist/index.global.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest"
+  },
+  "author": "zekun jin",
+  "license": "ISC",
+	"devDependencies": {
+		"@nuxtjs/eslint-config-typescript": "^12.0.0",
+		"eslint": "^8.34.0",
+		"tsup": "^6.6.3",
+		"typescript": "^4.9.5",
+		"vitest": "^0.28.5"
+	},
+	"dependencies": {
+		"h3": "^1.5.0",
+		"veelidate": "^0.0.11"
+	}
+}
