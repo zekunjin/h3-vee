@@ -2,19 +2,23 @@ lockfileVersion: 5.4
 
 specifiers:
   '@nuxtjs/eslint-config-typescript': ^12.0.0
+  '@types/lodash.mapvalues': ^4.6.7
   eslint: ^8.34.0
   h3: ^1.5.0
+  lodash.mapvalues: ^4.6.0
   tsup: ^6.6.3
   typescript: ^4.9.5
-  veelidate: ^0.0.11
+  veelidate: ^0.0.13
   vitest: ^0.28.5
 
 dependencies:
   h3: 1.5.0
-  veelidate: 0.0.11
+  lodash.mapvalues: 4.6.0
+  veelidate: 0.0.13
 
 devDependencies:
   '@nuxtjs/eslint-config-typescript': 12.0.0_7kw3g6rralp5ps6mg3uyzz6azm
+  '@types/lodash.mapvalues': 4.6.7
   eslint: 8.34.0
   tsup: 6.6.3_typescript@4.9.5
   typescript: 4.9.5
@@ -564,6 +568,16 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/lodash.mapvalues/4.6.7:
+    resolution: {integrity: sha512-yGTo9zD60Iw1Q+YBvx4Ad7RDj5rA6EpvYTpVPVsfe6pwHcwDcGChSqL1n2sPBMbCeHJ3R5kcaqpkdlrFe/y4Vg==}
+    dependencies:
+      '@types/lodash': 4.14.191
+    dev: true
+
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
     dev: true
 
   /@types/node/18.14.0:
@@ -2241,6 +2255,10 @@ packages:
     resolution: {integrity: sha512-APldePP4yvGhMcplVxv9L+exdLHMRHRhH1Q9O70zRJMm9HbTm6zxaihXtNl+ICOBApeFWoH7jNmFr/L4XfWeiQ==}
     dev: false
 
+  /lodash.mapvalues/4.6.0:
+    resolution: {integrity: sha512-JPFqXFeZQ7BfS00H58kClY7SPVeHertPE0lNuCyZ26/XlN8TvakYD7b9bGyNmXbT/D3BbtPAAmq90gPWqLkxlQ==}
+    dev: false
+
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
@@ -3151,8 +3169,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /veelidate/0.0.11:
-    resolution: {integrity: sha512-LiiQQv/nsPO3vUa94Fv1JxynSsB9Ntldzvil1DRQ0QVjatruZYQr2o7VC1NcLsMOF5Jfixrd/PwSzCThse8e3g==}
+  /veelidate/0.0.13:
+    resolution: {integrity: sha512-JVSgizAYO+cOo08YB5JPbT6cYKIPxMaM6NYoWB95E+ALjyLTzXSAbuG8KFeHSe6kKIWpGoKGfS916ukg4emRCw==}
     dependencies:
       lodash.forin: 4.4.0
       lodash.setwith: 4.3.2

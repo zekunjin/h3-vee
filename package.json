@@ -26,15 +26,17 @@
   },
   "author": "zekun jin",
   "license": "ISC",
-	"devDependencies": {
-		"@nuxtjs/eslint-config-typescript": "^12.0.0",
-		"eslint": "^8.34.0",
-		"tsup": "^6.6.3",
-		"typescript": "^4.9.5",
-		"vitest": "^0.28.5"
-	},
-	"dependencies": {
-		"h3": "^1.5.0",
-		"veelidate": "^0.0.11"
-	}
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@types/lodash.mapvalues": "^4.6.7",
+    "eslint": "^8.34.0",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.5"
+  },
+  "dependencies": {
+    "h3": "^1.5.0",
+    "lodash.mapvalues": "^4.6.0",
+    "veelidate": "^0.0.13"
+  }
 }
