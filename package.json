@@ -1,6 +1,6 @@
 {
   "name": "h3-vee",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A request JSON validator for h3",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
