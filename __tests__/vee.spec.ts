@@ -8,7 +8,10 @@ const jsonB = {
   name: 'NAME',
   location: {
     city: 'Tokyo',
-    code: 10000
+    code: 10000,
+    others: {
+      isDefault: true
+    }
   },
   like: ['travel']
 }
@@ -46,12 +49,12 @@ describe('vee core', () => {
         city: f<string>().required().isString(),
         code: f<number>().required().isNumber(),
         others: {
-          isDefault: f<boolean>(false)
+          isDefault: f<boolean>(false).required()
         }
       },
       like: f<string[]>([])
     }))
 
-    expect(query.location.others.isDefault).toBe(false)
+    expect(query.location.others.isDefault).toBe(true)
   })
 })
