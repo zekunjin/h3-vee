@@ -1,4 +1,4 @@
-# Veelidate
+# h3-vee
 
 A request query / body async validator for [h3](https://github.com/unjs/h3).
 
