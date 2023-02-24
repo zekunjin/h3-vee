@@ -1,10 +1,6 @@
 # Veelidate
 
-A request JSON validator for [h3](https://github.com/unjs/h3).
-
-## Features
-
-- Create object without define a validator
+A request query / body async validator for [h3](https://github.com/unjs/h3).
 
 ## Setup
 
@@ -13,6 +9,8 @@ pnpm add h3-vee
 ```
 
 ## Usage (nuxt)
+
+Support deep object after v0.0.3
 
 Get Query
 
@@ -23,7 +21,11 @@ export default defineEventHandler(async (event) => {
   try {
     const query = await asyncGetQuery(event, f => ({
       num: f<string>().required().isNumber(),
-      str: f<string>().required().isString()
+      str: f<string>().required().isString(),
+      obj: {
+        num: f<string>().required().isNumber(),
+        str: f<string>().required().isString(),
+      }
     }))
 
     return query
@@ -40,7 +42,11 @@ export default defineEventHandler(async (event) => {
   try {
     const query = await asyncReadBody(event, f => ({
       num: f<string>().required().isNumber(),
-      str: f<string>().required().isString()
+      str: f<string>().required().isString(),
+      obj: {
+        num: f<string>().required().isNumber(),
+        str: f<string>().required().isString(),
+      }
     }))
 
     return query
